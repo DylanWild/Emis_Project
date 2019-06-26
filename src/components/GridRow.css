@@ -1,9 +1,10 @@
-.grid-row {
+#grid-row {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 2.5rem;
     border-bottom: 0.5px solid grey;
+    text-align: center;
 }
 
 .grid-row-style {
@@ -13,3 +14,16 @@
     /* border-left: solid 0.3px grey; */
     border-right: solid 0.3px grey;
 }
+
+/* #grid-row:active {
+
+    background-color: blue
+
+} */
+
+#grid-row:active {
+
+    background-color: blue
+
+}
+

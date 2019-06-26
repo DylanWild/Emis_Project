@@ -8,7 +8,7 @@ export class Grid extends Component {
    
     render() {
         return (
-            <div className="grid-container">  
+            <div id="grid-container">  
             </div>
             
        

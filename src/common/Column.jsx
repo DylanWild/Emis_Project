@@ -4,7 +4,7 @@ import './Column.css'
 export default class Column extends Component {
     render() {
         return (
-            <div className="column">
+            <div id="column">
                 <p id='time'>Time</p>
                 <p id='des'>Description/Patient Name</p>
                 <p id='res'>Reason</p>

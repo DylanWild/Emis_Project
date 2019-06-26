@@ -3,6 +3,7 @@ import './App.css';
 // import Grid from './Grid';
 import Title from './common/Title';
 import GridObj from '../src/components/Time';
+// import Clickable from './Clickable'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Title/>
       {/* <Grid/> */}
       <GridObj/>
+      {/* <Clickable /> */}
     </div>
   );
 }

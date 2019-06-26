@@ -20,7 +20,7 @@ class GridRow extends Component {
    
     
     state = {
-        time: `${currentHour}:${i}`,
+        time: `${currentHour}:${i+15}`,
         patient: "n/a",
         reason: "n/a",
         notes: "n/a",
@@ -34,7 +34,7 @@ class GridRow extends Component {
     };
     render() {
         return (
-            <div className="grid-row">
+            <div id="grid-row">
                 <div className="time grid-row-style">{this.state.time}</div>
                 <div className="patient grid-row-style">{this.state.patient}</div>
                 <div className="reason grid-row-style">{this.state.reason}</div>
