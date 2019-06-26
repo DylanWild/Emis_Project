@@ -1,37 +1,37 @@
 import React, { Component } from 'react';
 import './GridRow.css';
-// import Time from './Time';
 
-// let n = ['9:00','9:15','9:30','9:45','10:00','10:15','10:30','10:45','11:00','11:15','11:30','11:45','12:00','12:15','12:30',]
-let i = 0
-let currentHour = 9
-// if (i = 60){
-//     hour+1
-// }
-// let currentTime = Date(),
-// let minutes = currentTime.getMinutes()
-// // let hour = 60
-// let workday = hour*8
-// let division = 15
-// let interval = workday/division
+let H = 8
+let M = 0
+let counter = 0
+
 
 class GridRow extends Component {
-
-   
     
     state = {
-        time: `${currentHour}:${i}`,
+        time: this.timeCounter(), 
+        //`${counter%4===0 ? H++ && counter++ :counter++, H}:${counter%4===0 ? M = 0 : M+=15}`,
+        // THIS SHOULD WORK BUT IT DOESNT FUCK THIS SHIT > see timeCounter
         patient: "n/a",
         reason: "n/a",
         notes: "n/a",
-    
     } 
-    timeInc() {
-        i += 15
-        if (i = 60) {
-            currentHour += 1
-        }
-    };
+    timeCounter() {
+    if(counter%4===0){
+        H++
+        counter++
+        M = '00'
+        return H + ':' + M
+    
+    } else {
+        counter++
+        M = Number(M)
+        M+=15
+        return H + ':' + M
+
+    }
+
+    }
     render() {
         return (
             <div className="grid-row">
@@ -43,5 +43,6 @@ class GridRow extends Component {
         )
     }
 }
+
 
 export default GridRow
