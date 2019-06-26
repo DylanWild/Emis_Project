@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <Title/>
+      <GridHeader/>
       <Grid/>
-      <GridHeader />
+      
     </div>
   );
 }
