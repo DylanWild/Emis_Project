@@ -5,7 +5,7 @@ export class Title extends Component {
     render() {
         return (
             <div className="title-container">
-                <h4>Placeholder</h4>
+                <p>Placeholder</p>
             </div>
         )
     }

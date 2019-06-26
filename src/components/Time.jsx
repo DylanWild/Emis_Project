@@ -10,7 +10,6 @@ const Time = (props) => {
             I+=15;
         } 
         return gridObj
-
 }
 
 export default Time
