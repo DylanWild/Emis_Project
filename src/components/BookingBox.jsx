@@ -17,8 +17,8 @@ export default class BookingBox extends Component {
                 <input className="surname inputs" type="text" placeholder="Second Name" required="yes"></input>
                 <p className="reasonText text">Reason</p>
                 <textarea className="reasonInput inputs" type="text" required="yes"></textarea>
-                <p className="notesText text">Notes</p>
-                <textarea type="text inputs" rows="3"></textarea>
+                <p className="notesText text" >Notes</p>
+                <textarea type="text inputs" rows="3" ></textarea>
                 <div className="buttons">
                 <button className="buts" id="cancelButton">Cancel</button>
                 <button className="buts" id="submitButton">Submit</button>
