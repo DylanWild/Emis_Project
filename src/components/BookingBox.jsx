@@ -13,12 +13,12 @@ export default class BookingBox extends Component {
             <div className="bookingBox" id = "bookingBox">
             <h1 className='text'>Book a Slot</h1>
             <p className="name">Patient Name</p>
-                <input className="firstName inputs" type="text" placeholder="First Name" required="yes"></input>
-                <input className="surname inputs" type="text" placeholder="Second Name" required="yes"></input>
+                <input className="firstName inputs" type="text" placeholder="First Name" required="yes">{this.state.firstname}</input>
+                <input className="surname inputs" type="text" placeholder="Second Name" required="yes">{this.state.surname}</input>
                 <p className="reasonText text">Reason</p>
-                <textarea className="reasonInput inputs" type="text" required="yes"></textarea>
-                <p className="notesText text">Notes</p>
-                <textarea type="text inputs" rows="3"></textarea>
+                <textarea className="reasonInput inputs" type="text" required="yes">{this.state.reason}</textarea>
+                <p className="notesText text" >Notes</p>
+                <textarea type="text inputs" rows="3" >{this.state.notes}</textarea>
                 <div className="buttons">
                 <button className="buts" id="cancelButton">Cancel</button>
                 <button className="buts" id="submitButton">Submit</button>

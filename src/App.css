@@ -6,8 +6,8 @@
 }
 
 body {
-  width: 1024px;
-  height: 768px;
+  min-width: 1024px;
+  min-height: 768px;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
