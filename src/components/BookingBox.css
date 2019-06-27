@@ -1,0 +1,78 @@
+.bookingBox{
+    background: rgb(209, 213, 213);
+    width: 30%;
+    /* height: 0%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    border: 2px solid darkgrey;
+   
+    
+}
+
+.inputs{
+ display: flex;
+ width: 50%;
+ /* justify-content: center;
+ align-items: center; */
+ position: relative;
+ border-radius: 7%;
+ 
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* justify-content: center; */
+
+}
+
+.buts{
+    padding-left: 50%;
+    margin: 10%;
+    /* text-align: left; */
+    padding-right: 50%;
+    vertical-align: left;
+    padding-top: 5%;
+    /* left: 20%; */
+
+}
+
+#cancelButton{
+    right: 70%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+ 
+}
+
+#submitButton{
+    right: 80%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.text{
+    font-size: 12pt;
+}
+textarea {
+    resize: none;
+  }
+.notesInput{
+    height: 50%;
+    line-height: 150px;
+}
+
+.firstName{
+    text-align: center;
+}
+
+.surname{
+    text-align: center;
+}
