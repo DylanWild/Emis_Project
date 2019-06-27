@@ -2,7 +2,7 @@ import React from 'react'
 import GridRow from './GridRow';
   
 const Time = (props) => {
-   let I= 0
+let I= 0
  let gridObj =[]
     while(I<480){
       let row = <GridRow/>
