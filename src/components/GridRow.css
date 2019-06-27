@@ -1,4 +1,4 @@
-#grid-row {
+.grid-row {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -15,13 +15,7 @@
     border-right: solid 0.3px grey;
 }
 
-/* #grid-row:active {
-
-    background-color: blue
-
-} */
-
-#grid-row:active {
+.grid-row:active {
 
     background-color: blue
 

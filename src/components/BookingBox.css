@@ -1,0 +1,77 @@
+#bookingBox{
+    background: #b1b1b1;
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 35;
+    width: 30%;
+    left: 35%;
+    height: 30%;
+    border-radius: 5%;
+    visibility: hidden
+    
+}
+
+
+.inputs{
+ display: flex;
+ width: 50%;
+ /* justify-content: center;
+ align-items: center; */
+ position: relative;
+ border-radius: 7%;
+ 
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* justify-content: center; */
+
+}
+
+.buts{
+    padding-left: 50%;
+    margin: 10%;
+    /* text-align: left; */
+    padding-right: 50%;
+    vertical-align: left;
+    padding-top: 5%;
+    /* left: 20%; */
+
+}
+
+#cancelButton{
+    right: 70%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+ 
+}
+
+#submitButton{
+    right: 80%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.text{
+    font-size: 12pt
+}
+
+.notesInput{
+    height: 50%;
+    line-height: 150px;
+}
+
+.firstName{
+    text-align: center;
+}
+
+.surname{
+    text-align: center;
+}
