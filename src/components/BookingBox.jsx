@@ -10,7 +10,7 @@ export default class BookingBox extends Component {
     }
     render() {
         return (
-            <div className="bookingBox">
+            <div className="bookingBox" id = "bookingBox">
             <h1 className='text'>Book a Slot</h1>
             <p className="name">Patient Name</p>
                 <input className="firstName inputs" type="text" placeholder="First Name" required="yes">{this.state.firstname}</input>

@@ -3,24 +3,38 @@ import './App.css';
 // import Grid from './Grid';
 import Title from './common/Title';
 import GridObj from '../src/components/Time';
-<<<<<<< HEAD
+
 import GridHeader from './common/GridHeader';
-=======
 import BookingBox from "./components/BookingBox"
->>>>>>> eb7af0fc98af3ca7bbae495adeac06611453deec
+import Clicky from './components/OnClickBox'
+import GridRow from './components/GridRow';
+
+import GridHeader from './common/GridHeader';
+
+import BookingBox from "./components/BookingBox"
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Title/> */}
+      <Title/>
       {/* <Grid/> */}
-<<<<<<< HEAD
+
       <GridHeader/>
       <GridObj/>
-=======
+      {/* <Clickable /> */}
       {/* <GridObj/> */}
       <BookingBox/>
->>>>>>> eb7af0fc98af3ca7bbae495adeac06611453deec
+      {/* <GridRow /> */}
+      <Clicky />
+
+
+      <GridHeader/>
+      <GridObj/>
+
+      {/* <GridObj/> */}
+      <BookingBox/>
+
     </div>
   );
 }
