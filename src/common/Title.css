@@ -2,9 +2,21 @@
     width: 100%;
     color: #ffffff;
     background-color: blue;
-    height: auto;
+    height: 2rem;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+#timeButton {
+
+    position: absolute;
+    left: 60rem;
+    height: 1.2rem;
+    width: 10rem;
+    top: 0.4rem;
+    background-color: lightgrey;
+    font-size: 12pt;
+    z-index: 3
 }
