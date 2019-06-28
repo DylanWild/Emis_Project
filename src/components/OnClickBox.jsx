@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import GridRow from './GridRow'
-import ReactDOM from 'react-dom'
+// import GridRow from './GridRow'
+// import ReactDOM from 'react-dom'
 
 export default class Clicky extends Component {
 

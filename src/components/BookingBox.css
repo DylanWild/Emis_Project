@@ -1,60 +1,68 @@
 
 #bookingBox{
     background: #b1b1b1;
-    width: 30%;
+    width: 60%;
     position: absolute;
     top: 35%;
     left: 35;
     width: 30%;
     left: 35%;
-    height: 30%;
-    border-radius: 5%;
-    visibility: hidden
+    height: auto;
+    border-radius: 5px;
+    visibility: hidden;
+    border: 2px solid #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.booking-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
 
 .inputs{
- display: flex;
- width: 50%;
- position: relative;
- border-radius: 7%;
- 
+    display: flex;
+    width: 50%;
+    position: relative;
+    border-radius: 5px;
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
-    text-align: center;
-    /* justify-content: center; */
-
+    justify-content: center;
 }
 
 .buts{
-    padding-left: 50%;
-    margin: 10%;
-    /* text-align: left; */
-    padding-right: 50%;
-    vertical-align: left;
-    padding-top: 5%;
-    /* left: 20%; */
-
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #cancelButton{
-    right: 70%;
+    width: auto;
+    height: auto;
     position: relative;
     text-align: center;
     justify-content: center;
     display: flex;
- 
 }
 
 #submitButton{
-    right: 80%;
+    width: auto;
+    height: auto;
     position: relative;
     justify-content: center;
     display: flex;
-   
 }
 
 .text{
