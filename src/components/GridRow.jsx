@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './GridRow.css';
+import BookingBox from './BookingBox';
 
 let H = 8
 let M = 0
@@ -10,9 +11,9 @@ class GridRow extends Component {
     
     state = {
         time: this.timeCounter(),
-        patient: "n/a",
-        reason: "n/a",
-        notes: "n/a",
+        patient: "",
+        reason: "",
+        notes: "",
     } 
     timeCounter() {
     if(counter%4===0){
@@ -28,12 +29,30 @@ class GridRow extends Component {
         return H + ':' + M
 
     }
-
     }
 
+    dialogBox = (patientData) => {
+        console.log(patientData)
+        setState((state) => {
+            return {
+                patient: state.patient + patientData.surname + ", " + patientData.firstname,
+                reason: state.reason + patientData.reason,
+                notes: state.notes + patientData.notes,
+            }
+         })
+        // const newItem = {
+        //   id: 6,
+        //   time: "time",
+        //   patient: patientData.surname + patientData.forename,
+        //   reason: patientData.reason,
+        //   notes: patientData.notes,
+        // }
+      
+        // GridInfo.setState({ schedule: [GridInfo.state.schedule[0], newItem]})
+      }
 
     openBookingBox(){
-        document.getElementById('bookingBox').style.visibility = "visible"
+        document.getElementById('bookingBox').style.display = "flex"
 
     }
     render() {
@@ -43,6 +62,7 @@ class GridRow extends Component {
                 <div className="patient grid-row-style">{this.state.patient}</div>
                 <div className="reason grid-row-style">{this.state.reason}</div>
                 <div className="notes grid-row-style">{this.state.notes}</div>
+                <BookingBox dialogBox={this.dialogBox}/>
             </div>
         )
     }

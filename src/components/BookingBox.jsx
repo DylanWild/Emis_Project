@@ -6,31 +6,41 @@ export default class BookingBox extends Component {
         firstname: "",
         surname: "",
         reason: "",
-        notes: ""
+        notes: "",
     }
-    input(){
-        this.setState({firstname:document.getElementById('firstName').input},
-                      {surname:document.getElementById('surname').input},
-                      {reason:document.getElementById('reasonInput').input},
-                      {notes:document.getElementById('text').input})
-    }
+    onSubmit = (e) => {
+        e.preventDefault();
+        this.props.dialogBox(this.state);
+        this.setState({ 
+            surname: '',
+            firstname: '',
+            reason: '',
+            notes: '',
+        });
+        document.getElementById('bookingBox').style.display = "flex"
+    };
+
+    onChange = (e) => this.setState({ [e.target.name]: e.target.value })
+
     render() {
         return (
-            <div className="bookingBox" id = "bookingBox">
-                <div className="booking-area">
+            <div className="bookingBox" id="bookingBox">
+                <form className="booking-area" onSubmit={this.onSubmit}>
                     <h1 className='text'>Book a Slot</h1>
-                    <p className="name">Patient Name</p>
-                    <input className="inputs" id="firstName" type="text" placeholder="First Name" required="yes"></input>
-                    <input className="inputs" id="surname" type="text" placeholder="Second Name" required="yes"></input>
-                    <p className="reasonText text">Reason</p>
-                    <textarea className="inputs" id="reasonInput" type="text" required="yes"></textarea>
-                    <p className="notesText text" >Notes</p>
-                    <textarea type="inputs" rows="3" id="text" ></textarea>
-                </div>
-                <div className="buttons">
-                    <button className="buts" id="cancelButton">Cancel</button>
-                    <button className="buts" id="submitButton">Submit</button>
-                </div>
+                    Patient Name
+                    <input type="text" placeholder="First Name" required="yes" name="firstname"
+                    onChange={this.onChange}></input>
+                    <input type="text" placeholder="Second Name" required="yes" name="surname"
+                    onChange={this.onChange}></input>
+                    Reason
+                    <textarea type="text" required="yes" name="reason"
+                    onChange={this.onChange}></textarea>
+                    Note
+                    <textarea type="inputs" rows="3" id="text" name="notes"
+                    onChange={this.onChange}></textarea>
+                    <input 
+                    type="submit" value="Submit" />
+                </form>
             </div>
         )
     }

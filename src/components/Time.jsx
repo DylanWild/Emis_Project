@@ -5,7 +5,7 @@ const Time = (props) => {
 let I= 0
  let gridObj =[]
     while(I<480){
-      let row = <GridRow/>
+      let row = <GridRow />
        gridObj.push(row)
             I+=15;
         } 

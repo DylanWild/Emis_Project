@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.right-click-box {
+    width: 200px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+}
+
+.ctm {
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+.ctm-1:hover {
+    background-color: #f8f8f8;
+}
