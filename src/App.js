@@ -18,8 +18,8 @@ class App extends Component {
       <GridHeader/>
       <GridObj/>
       <GridRow />
-      <Clicky />
-      <RightClickBox />
+      {/* <Clicky /> */}
+      {/* <RightClickBox /> */}
 
     </div>
   );

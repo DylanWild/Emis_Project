@@ -11,10 +11,10 @@
     border-radius: 5px;
     border: 2px solid #000000;
     padding: 10px;
-    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex;
 }
 
 .booking-area {

@@ -8,6 +8,7 @@ export default class BookingBox extends Component {
         reason: "",
         notes: "",
     }
+
     onSubmit = (e) => {
         e.preventDefault();
         this.props.dialogBox(this.state);
@@ -17,27 +18,27 @@ export default class BookingBox extends Component {
             reason: '',
             notes: '',
         });
-        document.getElementById('bookingBox').style.display = "flex"
     };
 
     onChange = (e) => this.setState({ [e.target.name]: e.target.value })
 
     render() {
+        const { firstname, surname, reason, notes } = this.state
         return (
             <div className="bookingBox" id="bookingBox">
                 <form className="booking-area" onSubmit={this.onSubmit}>
                     <h1 className='text'>Book a Slot</h1>
                     Patient Name
                     <input type="text" placeholder="First Name" required="yes" name="firstname"
-                    onChange={this.onChange}></input>
+                    onChange={this.onChange} value={firstname}></input>
                     <input type="text" placeholder="Second Name" required="yes" name="surname"
-                    onChange={this.onChange}></input>
+                    onChange={this.onChange} value={surname}></input>
                     Reason
                     <textarea type="text" required="yes" name="reason"
-                    onChange={this.onChange}></textarea>
+                    onChange={this.onChange} value={reason}></textarea>
                     Note
                     <textarea type="inputs" rows="3" id="text" name="notes"
-                    onChange={this.onChange}></textarea>
+                    onChange={this.onChange} value={notes}></textarea>
                     <input 
                     type="submit" value="Submit" />
                 </form>
