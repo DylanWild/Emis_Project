@@ -9,13 +9,12 @@
     left: 35%;
     height: auto;
     border-radius: 5px;
-    visibility: hidden;
     border: 2px solid #000000;
     padding: 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex;
 }
 
 .booking-area {
